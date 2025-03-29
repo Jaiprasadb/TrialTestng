@@ -15,46 +15,56 @@
   </properties>
 
   <dependencies>
-  
-  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.141.59</version>
-</dependency>
-
-  
-  <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>5.9.2</version>
-</dependency>
-
-  
-  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.10.2</version>
-    <scope>test</scope>
-</dependency>
-
+    <!-- Selenium Dependency -->
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>3.141.59</version>
     </dependency>
+
+    <!-- WebDriverManager Dependency -->
     <dependency>
-    	<groupId>com</groupId>
-    	<artifactId>DataDriven</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
+        <groupId>io.github.bonigarcia</groupId>
+        <artifactId>webdrivermanager</artifactId>
+        <version>5.9.2</version>
     </dependency>
+
+    <!-- TestNG Dependency -->
     <dependency>
-    	<groupId>com</groupId>
-    	<artifactId>Cucumber</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.10.2</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- JUnit Dependency -->
+    <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>3.8.1</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- DataDriven Dependency (Ensure it's installed in local or remote repo) -->
+    <dependency>
+        <groupId>com</groupId>
+        <artifactId>DataDriven</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+
+    <!-- Cucumber Dependency (Ensure it's installed in local or remote repo) -->
+    <dependency>
+        <groupId>com</groupId>
+        <artifactId>Cucumber</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
+
+  <repositories>
+    <repository>
+      <id>internal-repository</id>
+      <url>https://github.com/Jaiprasadb/TrialTestng.git</url> <!-- Replace with the actual repository URL -->
+    </repository>
+  </repositories>
+
 </project>
