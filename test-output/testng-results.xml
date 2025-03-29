@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-25T08:42:21 IST" name="Default suite" finished-at="2025-01-25T08:42:24 IST" duration-ms="3024">
+  <suite started-at="2025-03-29T16:49:53 IST" name="Default suite" finished-at="2025-03-29T16:49:53 IST" duration-ms="56">
     <groups>
+      <group name="Laptop">
+        <method signature="Group.Lenovo()[pri:-1, instance:com.simpleannotation.Group@62379589]" name="Lenovo" class="com.simpleannotation.Group"/>
+        <method signature="Group.hp()[pri:0, instance:com.simpleannotation.Group@62379589]" name="hp" class="com.simpleannotation.Group"/>
+        <method signature="Group.dell()[pri:1, instance:com.simpleannotation.Group@62379589]" name="dell" class="com.simpleannotation.Group"/>
+      </group> <!-- Laptop -->
+      <group name="Mobile">
+        <method signature="Group.google()[pri:0, instance:com.simpleannotation.Group@62379589]" name="google" class="com.simpleannotation.Group"/>
+        <method signature="Group.nokia()[pri:0, instance:com.simpleannotation.Group@62379589]" name="nokia" class="com.simpleannotation.Group"/>
+        <method signature="Group.samsung()[pri:0, instance:com.simpleannotation.Group@62379589]" name="samsung" class="com.simpleannotation.Group"/>
+      </group> <!-- Mobile -->
     </groups>
-    <test started-at="2025-01-25T08:42:21 IST" name="Default test" finished-at="2025-01-25T08:42:24 IST" duration-ms="3024">
-      <class name="com.simpleannotation.Parameter">
-        <test-method is-config="true" signature="facebook()[pri:0, instance:com.simpleannotation.Parameter@4802796d]" started-at="2025-01-25T08:42:21 IST" name="facebook" finished-at="2025-01-25T08:42:24 IST" duration-ms="2684" status="PASS">
+    <test started-at="2025-03-29T16:49:53 IST" name="Default test" finished-at="2025-03-29T16:49:53 IST" duration-ms="56">
+      <class name="com.simpleannotation.Group">
+        <test-method signature="google()[pri:0, instance:com.simpleannotation.Group@62379589]" started-at="2025-03-29T16:49:53 IST" name="google" finished-at="2025-03-29T16:49:53 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- facebook -->
-        <test-method signature="Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.simpleannotation.Parameter@4802796d]" started-at="2025-01-25T08:42:24 IST" name="Credentials" data-provider="userdetails" finished-at="2025-01-25T08:42:24 IST" duration-ms="303" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Prasad]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Pass@123]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- google -->
+        <test-method signature="nokia()[pri:0, instance:com.simpleannotation.Group@62379589]" started-at="2025-03-29T16:49:53 IST" name="nokia" finished-at="2025-03-29T16:49:53 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Credentials -->
-      </class> <!-- com.simpleannotation.Parameter -->
+        </test-method> <!-- nokia -->
+        <test-method signature="samsung()[pri:0, instance:com.simpleannotation.Group@62379589]" started-at="2025-03-29T16:49:53 IST" name="samsung" finished-at="2025-03-29T16:49:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- samsung -->
+        <test-method signature="Lenovo()[pri:-1, instance:com.simpleannotation.Group@62379589]" started-at="2025-03-29T16:49:53 IST" name="Lenovo" depends-on-groups="Mobile" finished-at="2025-03-29T16:49:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Lenovo -->
+        <test-method signature="hp()[pri:0, instance:com.simpleannotation.Group@62379589]" started-at="2025-03-29T16:49:53 IST" name="hp" depends-on-groups="Mobile" finished-at="2025-03-29T16:49:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hp -->
+        <test-method signature="dell()[pri:1, instance:com.simpleannotation.Group@62379589]" started-at="2025-03-29T16:49:53 IST" name="dell" depends-on-groups="Mobile" finished-at="2025-03-29T16:49:53 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dell -->
+      </class> <!-- com.simpleannotation.Group -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
